@@ -1,6 +1,6 @@
 % Add this repo's folders to the MATLAB path
-repo_root = fileparts(mfilename("fullpath"));
-addpath(genpath(repo_root));
+customization_repo_root = fileparts(mfilename("fullpath"));
+addpath(genpath(customization_repo_root));
 
 % Refresh Simulink to recognize the  customizations.
 sl_refresh_customizations;
