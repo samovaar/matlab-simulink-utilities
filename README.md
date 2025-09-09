@@ -4,7 +4,9 @@ Repo contains useful utilities for the entire MATLAB/Simulink environment.
 # General
 
 In MATLAB, the `sl_customization` function is a powerful tool for customizing Simulink's behavior beyond just adding custom menus. 
-It allows you to modify various aspects of the Simulink environment programmatically. 
+It allows you to modify various aspects of the Simulink environment programmatically. For example, you can add custom command that 
+formats simulink blocks like inports and outports.
+ 
 
 Here are some of the key things you can do with sl_customization:
 <details>
