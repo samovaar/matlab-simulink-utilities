@@ -6,4 +6,4 @@ addpath(genpath(customization_repo_root));
 sl_refresh_customizations;
 
 
-disp('[+] Simulink Customization repo setup complete.');
+disp([newline '[+] Simulink Customization setup complete.']);
