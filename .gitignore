@@ -1,0 +1,65 @@
+
+# Markdown backup files
+*.md.backup
+
+
+# VSCode
+*.vscode/
+
+# Arduino error log
+*.theia/
+*build/
+
+# MATLAB Auto-Save and Backup Files
+*.asv
+*.bak
+
+
+# MATLAB Figure and Data Files (if temporary)
+#*.fig
+#*.mat
+#*.txt
+#*.out
+#*.log
+
+
+# Simulink Cache and Build Files
+*.slxc
+*.slxp
+slprj/
+codegen/
+*.bin
+*.bootloader.bin
+*.elf
+*.map
+*.partitions.bin
+untitled_ert_rtw/
+micromouse_ert_rtw/
+
+
+# Compiled and Protected MATLAB Files
+*.mex*
+*.p
+*.mcr
+
+
+# MATLAB App Designer & Toolbox Files
+*.mlappinstall
+*.mltbx
+*.mlpkginstall
+
+
+# MATLAB Project and Workspace Files
+*.mlproj/
+work/
+simulink_code_gen/
+simulink_cache/
+
+
+# MATLAB Preferences and Settings
+.matlab/
+
+
+# IDE-Specific and OS-Specific Files
+.DS_Store
+Thumbs.db
