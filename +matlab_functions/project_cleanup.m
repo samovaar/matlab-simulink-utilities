@@ -14,4 +14,6 @@ function project_cleanup(full_clean)
          end 
     end
 
+    evalin("base", "clear");
+
 end

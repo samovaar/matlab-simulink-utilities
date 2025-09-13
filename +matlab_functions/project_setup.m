@@ -18,7 +18,9 @@ function project = project_setup()
         end
     end   
 
+    assignin("base", "Project", project);
 
+    
     disp(['[+] Simulink CodeGen Dir: ' char(project.SimulinkCodeGenFolder)]);
     disp(['[+] Simulink Cache Dir: ' char(project.SimulinkCacheFolder)]);
     disp('[+] Project setup complete');
