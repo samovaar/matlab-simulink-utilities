@@ -26,7 +26,7 @@ function [is_python_process_running, python_processes_count] = chk_py3(~)
     
     if is_python_process_running
         python_processes_count = count_python_processes(cmd_output);
-        disp(['[ ] PYTHON LOCK CHECK: Python process(es) detected: ' python_processes_count]);
+        disp(['[ ] PYTHON LOCK CHECK: Python process(es) detected: ' num2str(python_processes_count)]);
     else
         disp('[+] PYTHON LOCK CHECK: Python process(es) NOT detected');
     end     
