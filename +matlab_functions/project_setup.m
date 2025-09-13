@@ -10,14 +10,17 @@ function project = project_setup()
         try
             mkdir(build_dir);           
             mkdir(sim_cache);
+
+            project.SimulinkCacheFolder = sim_cache;
+            project.SimulinkCodeGenFolder = build_dir;
         catch
             error('[-] Cannot create Simulink code generation folders. Check if paths are valid')
         end
     end   
 
-    project.SimulinkCacheFolder = sim_cache;
-    project.SimulinkCodeGenFolder = build_dir;
 
+    disp(['[+] Simulink CodeGen Dir: ' char(project.SimulinkCodeGenFolder)]);
+    disp(['[+] Simulink Cache Dir: ' char(project.SimulinkCacheFolder)]);
     disp('[+] Project setup complete');
 end
 

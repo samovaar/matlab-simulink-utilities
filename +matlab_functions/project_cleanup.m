@@ -1,7 +1,7 @@
 function project_cleanup(full_clean)
 
    
-    [python_detected, python_processes_count] = chk_py3();
+    [python_detected, python_processes_count] = matlab_functions.chk_py3();
 
     if python_detected && full_clean
         [status, ~] = system('taskkill /f /im python3.exe');
