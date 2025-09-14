@@ -4,7 +4,7 @@ Repo contains useful utilities for MATLAB/Simulink environment.
 # How to Use
 
 * If you are using Git to manage your MATLAB project, add this repo as a submodule. 
-* For Simulink functions, it is important to check box that says something similar to 'Refresh Simulink customizations after openning or closing this project' in your projec settings.
+* For Simulink functions, it is important to check box that says something similar to 'Refresh Simulink customizations after openning or closing this project' in your project settings.
 * For MATLAB functions, call the function that you want to use. 
 
 
