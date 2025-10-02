@@ -1,4 +1,4 @@
-function do_quick_format(~)
+function quick_format_callback(~)
     % Searching for inport, outport, and constant blocks in current Simulink/Simscape level
     % Depth 1 = current level only
 
