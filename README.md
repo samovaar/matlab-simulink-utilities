@@ -3,7 +3,8 @@ Repo contains useful utilities for MATLAB/Simulink environment.
 
 # How to Use
 
-* If you are using Git to manage your MATLAB project, add this repo as a submodule. 
+To call functions from anywhere, run `add_path` to add `src` folder to the matlab path and `pathdef.m`.
+
 * For Simulink functions, it is important to check box that says something similar to 'Refresh Simulink customizations after openning or closing this project' in your project settings.
 * For MATLAB functions, call the function that you want to use. 
 
