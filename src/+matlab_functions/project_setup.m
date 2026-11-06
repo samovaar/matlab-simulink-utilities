@@ -1,5 +1,7 @@
 function project = project_setup()
 %PROJECT_SETUP creates project obj and creates simulink coder generation and cache directories
+    
+    disp([newline '*** STARTING PROJECT ***']);
 
     project = matlab.project.rootProject;    
   
@@ -18,11 +20,32 @@ function project = project_setup()
         end
     end   
 
-    assignin("base", "Project", project);
+
 
     
     disp(['[+] Simulink CodeGen Dir: ' char(project.SimulinkCodeGenFolder)]);
     disp(['[+] Simulink Cache Dir: ' char(project.SimulinkCacheFolder)]);
     disp('[+] Project setup complete');
+
+
+    % Refactor this
+    local_variables = who;
+
+    % Putting local variables to the workspace
+    for i = 1 : length(local_variables)
+        assignin('base', local_variables{i}, eval(local_variables{i}));
+    end
+    
+
+    % Check if workspace is empty
+    workspace_vars = evalin('base', 'who');
+
+    if isempty(workspace_vars)
+        error([newline '[-] Base workspace is empty. Project files not loaded']);       
+    else
+        disp(['[+] STARTUP: Base workspace contains ' num2str(length(workspace_vars)) ' variables']);
+        disp(['[+] STARTUP: Project path: ', char(project.RootFolder)]);
+        disp([newline '*** PROJECT FILES LOADED ***' newline]);
+    end 
 end
 
