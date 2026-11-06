@@ -25,7 +25,7 @@ function project = project_setup()
     
     disp(['[+] Simulink CodeGen Dir: ' char(project.SimulinkCodeGenFolder)]);
     disp(['[+] Simulink Cache Dir: ' char(project.SimulinkCacheFolder)]);
-    disp('[+] Project setup complete');
+    
 
 
     % Refactor this
@@ -45,6 +45,7 @@ function project = project_setup()
     else
         disp(['[+] STARTUP: Base workspace contains ' num2str(length(workspace_vars)) ' variables']);
         disp(['[+] STARTUP: Project path: ', char(project.RootFolder)]);
+        disp('[+] Project setup complete');
         disp([newline '*** PROJECT FILES LOADED ***' newline]);
     end 
 end
