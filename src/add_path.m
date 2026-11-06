@@ -1,5 +1,5 @@
 function add_path(~)
-%ADD_PATH add src contents to the matlab path and save in pathdef.m
+%ADD_PATH add src contents to the matlab path and save in pathdef.m, run 'edit pathdef' to confirm that path was added
 
 dir_path = fileparts(mfilename("fullpath"));
 
